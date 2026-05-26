@@ -1,0 +1,33 @@
+{
+"Devices":[
+	{
+	"name":"NVIDIA GeForce RTX 4070",
+	"major":"8",
+	"minor":"9",
+	"integrated":"0",
+	"tccDriver":"0",
+	"ECCEnabled":"0",
+	"concurrentKernels":"1",
+	"canMapHostMemory":"1",
+	"multiProcessorCount":"46",
+	"warpSize":"32",
+	"maxThreadsPerBlock":"1024",
+	"maxThreadsDim":[1024,1024,64],
+	"maxGridSize":[2147483647,65535,65535],
+	"maxTexture1D":"131072",
+	"maxTexture2D":[131072,65536],
+	"maxTexture3D":[16384,16384,16384],
+	"pciBusID":"1",
+	"pciDeviceID":"0",
+	"regsPerBlock":"65536",
+	"memPitch":"2147483647",
+	"surfaceAlignment":"512",
+	"textureAlignment":"512",
+	"totalConstMem":"65536",
+	"totalGlobalMem":"12878086144",
+	"sharedMemPerBlock":"49152",
+	"canMapHostMemory":"1",
+	"regsPerBlock":"65536"
+	}
+]
+}
