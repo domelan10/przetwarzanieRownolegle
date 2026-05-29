@@ -4,7 +4,7 @@ LDFLAGS = -lm
 OMP_FLAGS = -fopenmp
 NVCC = nvcc
 
-TARGETS = gen_c.bin generator_s.bin generator.bin sito_seq.bin sito_openmp.bin prop_json.bin grafy_17_35.g6
+TARGETS = gen_c.bin generator_s.bin generator.bin sito_seq.bin sito_openmp.bin sito_cuda.bin prop_json.bin grafy_17_35.g6
 
 all: $(TARGETS)
 
@@ -22,6 +22,9 @@ sito_seq.bin: sito_seq.c
 
 sito_openmp.bin: sito_openmp.c
 	$(CC) $(CFLAGS) $(OMP_FLAGS) sito_openmp.c -o sito_openmp.bin $(LDFLAGS)
+
+sito_cuda.bin: sito_cuda.cu
+	$(NVCC) -O3 -Xcompiler -fopenmp sito_cuda.cu -o sito_cuda.bin -lgomp
 
 prop_json.bin: prop_json.cu
 	$(NVCC) prop_json.cu -o prop_json.bin

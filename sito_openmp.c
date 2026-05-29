@@ -169,7 +169,7 @@ int main(int argc, char *argv[])
                 break;
             }
 
-            int n = decodeGraph6(line, adj);
+            int n = decodeInput(line, adj);
             if (n <= 0)
                 continue;
 
